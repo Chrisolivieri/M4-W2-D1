@@ -53,7 +53,7 @@ function search(){
             let card = ""
             
             data.photos.map((item, i) => {
-                card += ` <div class="card" style="width: 18rem;">
+                card += ` <div class="card">
                 <img src= ${item.src.medium} class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"><b>Descrizione</b></h5>
@@ -61,7 +61,7 @@ function search(){
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item"><b>Fotografo</b>: ${item.photographer}</li>
-                  <li class="list-group-item"><b>URL fotografo</b>: ${item.photographer_url}</li>
+                  <li class="list-group-item"><b><a href = ${item.photographer_url} target="_blank">Pagina fotografo</a></b></li>
                   <li class="list-group-item"><b>ID foto</b>: ${item.id}</li>
                 </ul>
                 
