@@ -1,6 +1,3 @@
-
-
-
 // fetch("https://api.pexels.com/v1/search/?page=5&per_page=16&query=dog", {
 //     method: "GET",
 //     headers: {
@@ -40,9 +37,6 @@ let page = 1
 function search() {
 
   let img = document.getElementById("searchImg").value
-  
- 
-
 
   fetch(`https://api.pexels.com/v1/search/?page=${page}&locale=it-IT&per_page=16&query=` + img, {
     method: "GET",
@@ -94,13 +88,10 @@ document.getElementById('searchImg').addEventListener('keypress', function (even
   }
 })
 
-function nextPage(){
+function nextPage() {
   page++
 
   let img = document.getElementById("searchImg").value
-  
- 
-
 
   fetch(`https://api.pexels.com/v1/search/?page=${page}&locale=it-IT&per_page=16&query=` + img, {
     method: "GET",
@@ -145,13 +136,10 @@ function nextPage(){
   })
 }
 
-function prevPage(){
+function prevPage() {
   page--
 
   let img = document.getElementById("searchImg").value
-  
- 
-
 
   fetch(`https://api.pexels.com/v1/search/?page=${page}&locale=it-IT&per_page=16&query=` + img, {
     method: "GET",
