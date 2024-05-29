@@ -27,3 +27,8 @@ h1{
 #searchTitle{
     text-align: center;
 }
+
+#prevPage, #nextPage{
+    
+    margin: 1rem;
+}
